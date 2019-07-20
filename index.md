@@ -2,5 +2,9 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: main
+title: Index
+
 ---
+
+This is a test page for now to test my empty theme
