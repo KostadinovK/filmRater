@@ -1,7 +1,7 @@
 {
-  "name": "FilmRater",
+  "name": "Mycroft",
   "version": "1.0.0",
-  "description": "A website about film reviews and news about films",
+  "description": "Jekyll theme by the best HTML & CSS Course",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KostadinovK/kostadinovk.github.io"
+    "url": "git+git@github.com:kdankov/su-jekyll-mycroft.git"
   },
-  "author": "Kostadin Kostadinov",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": ""

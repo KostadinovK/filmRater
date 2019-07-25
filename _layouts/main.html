@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <script src="https://kit.fontawesome.com/9b8ef0615f.js"></script>
+    <title>FilmRater {{page.title}}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 </head>
 <body>
-    {% include header.html %}
-    <h1>Main Test</h1>
-    {{content}}
-    {% include footer.html %}
-</body>
+    <div class="site">
+        <header class="site-header">
+            <div class="logo">
+                <img src="../images/logo/logo.png" alt="Site logo">
+            </div>
+            {% include navigation.html location="header" %}
+        </header>
 
+        <main class="site-main">
+            {{content}}
+        </main>
+
+        <footer class="site-footer">
+            {% include footer.html location="footer" %}
+        </footer>
+    </div>
+</body>
 </html>
