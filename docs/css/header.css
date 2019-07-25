@@ -4,8 +4,20 @@ header{
     align-items: center;
 }
 
-header div{
+header div.logo{
     flex: 0 1 60%;
+}
+
+header div.logo a{
+    text-decoration: none;
+    color: var(--site-main-color);
+    font-weight: bold;
+    font-family: 'PT Sans';
+    font-size: 2rem;
+}
+
+header div.logo p{
+    color: var(--site-main-color);
 }
 
 header nav{
