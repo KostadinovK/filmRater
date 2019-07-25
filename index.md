@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: main
-title: Index
-
+title: Home
+permalink: /home
 ---
 
 This is a test page for now to test my empty theme
