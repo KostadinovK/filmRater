@@ -1,0 +1,57 @@
+footer{
+    background: var(--site-main-color);
+    color: var(--site-second-color);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: [content-start] repeat(3, 1fr) [content-end];
+    grid-template-rows: 100px 20px;
+}
+
+footer h2{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer .footer-text{
+    text-align: center;
+}
+
+footer .footer-text h2{
+    margin-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+
+footer .contact-us ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .contact-us ul li{
+    list-style: none;
+    flex: 0 0 45%;
+    text-align: center;
+}
+
+footer .follow-us ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer .follow-us li{
+    list-style: none;
+    flex: 0 0 10%;
+    text-align: center;
+}
+
+footer .follow-us li i{
+    color: var(--site-second-color);
+    font-size: 1.5rem;
+}
+
+footer .rights{
+    text-align: center;
+    grid-column: content-start / content-end;
+    margin-bottom: 0;
+}
