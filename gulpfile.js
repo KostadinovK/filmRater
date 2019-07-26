@@ -16,15 +16,6 @@ gulp.task("css", function() {
 	;
 });
 
-gulp.task("images", function() {
-	return gulp.src( 'images/**/*.jpg' )
-		// .pipe( sass().on('error', sass.logError) )
-		.pipe( autoprefixer() )
-		.pipe( gulp.dest( './docs/images/' ) )
-		.pipe( browserSync.stream({ match: '**/*.jpg' }) )
-	;
-});
-
 // Jekyll
 gulp.task("jekylldev", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true });
@@ -58,6 +49,6 @@ gulp.task("watch", function() {
 	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
 });
 
-gulp.task("deploy", gulp.series('jekyllprod', 'css', 'images'));
+gulp.task("deploy", gulp.series('jekyllprod', 'css'));
 
 gulp.task("default", gulp.series('jekylldev', 'css', 'watch'));
