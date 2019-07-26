@@ -6,6 +6,10 @@ html{
     font-family: var(--site-content-font), sans-serif;
 }
 
+input, button, blockquote{
+    font-family: inherit;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: var(--site-headings-font), serif;
 }
