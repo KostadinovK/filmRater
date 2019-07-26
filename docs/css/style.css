@@ -38,6 +38,7 @@
 }
 
 .cta a{
+    opacity: 0;
     background: var(--site-main-color);
     border-radius: 10px;
     text-decoration: none;
@@ -117,10 +118,6 @@
     background: rgb(0, 0, 0, 0.5);
 }
 
-.our-team ul li .member .media:hover:after{
-    display: none;
-}
-
 .our-team ul li .member .media .info{
     position: absolute;
     bottom: 0;
@@ -135,10 +132,6 @@
 
 .our-team ul li .member .media .info h2{
     margin-bottom: 2rem;
-}
-
-.our-team ul li .member .media:hover .info{
-    opacity: 0;
 }
 
 .our-team ul li .member .media a img{

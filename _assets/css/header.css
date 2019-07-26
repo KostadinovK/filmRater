@@ -38,6 +38,7 @@ header nav ul li{
     display: block;
     text-align: center;
     flex: 0 0 18%;
+    opacity: 0;
 }
 
 header nav ul li a{
