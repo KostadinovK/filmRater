@@ -1,6 +1,4 @@
-.our-team{
-    display: none;
-}
+
 
 .reviews-about-us{
     display: none;
@@ -13,7 +11,7 @@
 .cta{
     text-align: center;
     padding: 14rem 1rem;
-    background: url(/images/movieWall.jpg) center center;
+    background: url(https://heimkino-partner.de/wp-content/uploads/2016/12/gui-zappiti-movie-wall-en-1920x1080.jpg) center center;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -67,4 +65,91 @@
 .cta a:hover{
     background-color: var(--site-second-color);
     color: var(--site-main-color);
+}
+
+.our-team{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.our-team h2{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--site-main-color);
+    margin-bottom: 0.5rem;
+}
+
+.our-team h3{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.our-team ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.our-team ul li{
+    flex: 0 0 24%;
+    list-style: none;
+}
+
+.our-team ul li .member{
+    text-align: center;
+}
+
+.our-team ul li .member .media{
+    max-width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.our-team ul li .member .media:hover{
+    cursor: pointer;
+}
+
+.our-team ul li .member .media:after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.our-team ul li .member .media:hover:after{
+    display: none;
+}
+
+.our-team ul li .member .media .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: var(--site-second-color);
+    opacity: 1;
+    width: 100%;
+}
+
+.our-team ul li .member .media .info h2{
+    margin-bottom: 2rem;
+}
+
+.our-team ul li .member .media:hover .info{
+    opacity: 0;
+}
+
+.our-team ul li .member .media a img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.our-team .media{
+    background: #CCC;
 }
