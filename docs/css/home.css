@@ -115,6 +115,7 @@
     left: 0;
     right: 0;
     background: rgb(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .our-team ul li .member .media .info{
@@ -136,10 +137,6 @@
     display: block;
     width: 100%;
     height: auto;
-}
-
-.our-team .media{
-    background: #CCC;
 }
 
 .newsletter{

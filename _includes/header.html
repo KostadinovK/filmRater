@@ -9,7 +9,8 @@
         {% assign nav = site.pages | sort:"order" %}
         {% for item in nav %}
             {% if item.title %}    
-            <li{% if item.url == page.url %} class="selected"{% endif %}>
+            <li{% if item.url == page.url %} class="selected"{% endif %}
+            {% if item.url != page.url %} class="animate"{% endif %}>
                 <a href="{{ site.baseurl }}{{ item.url }}">
                     {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
                     {{ item.title }}
