@@ -78,16 +78,58 @@
     }
 }
 
-@media(max-width: 1200px){
-    .cta a,
-    header nav ul li{
-        opacity: 1;
+@-webkit-keyframes changeColorMainToSecond{
+    0%{
+        background-color: var(--site-main-color);
+        color: var(--site-second-color);
+    }
+
+    100%{
+        background-color: var(--site-second-color);
+        color: var(--site-main-color);
+    }
+}
+
+@keyframes changeColorMainToSecond{
+    0%{
+        background-color: var(--site-main-color);
+        color: var(--site-second-color);
+    }
+
+    100%{
+        background-color: var(--site-second-color);
+        color: var(--site-main-color);
+    }
+}
+
+@-webkit-keyframes changeColorSecondToMain{
+    0%{
+        background-color: var(--site-second-color);
+        color: var(--site-main-color);
+    }
+
+    100%{
+        background-color: var(--site-main-color);
+        color: var(--site-second-color);
+    }
+}
+
+@keyframes changeColorSecondToMain{
+    0%{
+        background-color: var(--site-second-color);
+        color: var(--site-main-color);
+    }
+
+    100%{
+        background-color: var(--site-main-color);
+        color: var(--site-second-color);
     }
 }
 
 /*Home page animations*/
 @media(min-width: 1200px){
     header nav ul li{
+        opacity: 0;
         -webkit-animation: fadeInWithMovement 0.3s linear;
                 animation: fadeInWithMovement 0.3s linear;
         -webkit-animation-fill-mode: both;
@@ -99,7 +141,22 @@
     header nav ul li:nth-child(3){-webkit-animation-delay: 0.6s;animation-delay: 0.6s;}
     header nav ul li:nth-child(4){-webkit-animation-delay: 0.9s;animation-delay: 0.9s;}
 
+    header nav ul li a{
+        -webkit-animation: changeColorMainToSecond 0.3s linear;
+                animation: changeColorMainToSecond 0.3s linear;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+    }
+
+    header nav ul li a:hover{
+        -webkit-animation: changeColorSecondToMain 0.3s linear;
+                animation: changeColorSecondToMain 0.3s linear;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+    }
+
     .cta a{
+        opacity: 0;
         -webkit-animation: fadeIn 1.5s linear;
                 animation: fadeIn 1.5s linear;
         -webkit-animation-fill-mode: both;
