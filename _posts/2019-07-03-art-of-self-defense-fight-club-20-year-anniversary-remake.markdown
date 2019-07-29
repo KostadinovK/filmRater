@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: post
 title: "The Art of Self-Defense functions like a 20-year anniversary remake of Fight Club"
 subtitle: "And its take on masculinity, entitlement, and loneliness sheds light on how Fight Club works"
 date: 2019-07-03 16:30:00 +0300

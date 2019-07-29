@@ -78,6 +78,30 @@
     }
 }
 
+@-webkit-keyframes fadeInWithMovementAtLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInWithMovementAtLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @-webkit-keyframes changeColorMainToSecond{
     0%{
         background-color: var(--site-main-color);
@@ -167,7 +191,7 @@
 
     .our-team ul li .member .media:after,
     .our-team ul li .member .media .info,
-    .post-header .post-media:after
+    .posts-headers .post .post-media:after
     {
         -webkit-animation: fadeIn 0.6s linear;
                 animation: fadeIn 0.6s linear;
@@ -177,7 +201,7 @@
 
     .our-team ul li .member .media:hover:after,
     .our-team ul li .member .media:hover .info,
-    .post-header:hover .post-media:after{
+    .posts-headers .post:hover .post-media:after{
         -webkit-animation: fadeOut 0.8s linear;
                 animation: fadeOut 0.8s linear;
         -webkit-animation-fill-mode: both;
@@ -195,3 +219,29 @@
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
 }
+
+.other-posts h2{
+    -webkit-animation: fadeInWithMovementAtLeft 0.2s linear;
+            animation: fadeInWithMovementAtLeft 0.2s linear;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+
+.other-posts ul li{
+    -webkit-animation: fadeInWithMovementAtLeft 0.2s linear;
+            animation: fadeInWithMovementAtLeft 0.2s linear;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.other-posts ul li:nth-child(1){ -webkit-animation-delay: 1.4s; animation-delay: 1.4s; }
+.other-posts ul li:nth-child(2){ -webkit-animation-delay: 1.6s; animation-delay: 1.6s; }
+.other-posts ul li:nth-child(3){ -webkit-animation-delay: 1.8s; animation-delay: 1.8s; }
+.other-posts ul li:nth-child(4){ -webkit-animation-delay: 2s; animation-delay: 2s; }
+.other-posts ul li:nth-child(5){ -webkit-animation-delay: 2.2s; animation-delay: 2.2s; }
+.other-posts ul li:nth-child(6){ -webkit-animation-delay: 2.4s; animation-delay: 2.4s; }
+.other-posts ul li:nth-child(7){ -webkit-animation-delay: 2.6s; animation-delay: 2.6s; }
+.other-posts ul li:nth-child(8){ -webkit-animation-delay: 2.8s; animation-delay: 2.8s; }
+.other-posts ul li:nth-child(9){ -webkit-animation-delay: 3s; animation-delay: 3s; }

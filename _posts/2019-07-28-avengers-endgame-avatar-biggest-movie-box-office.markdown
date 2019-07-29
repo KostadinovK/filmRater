@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: post
 title: "Avengers: Endgame finally passes Avatar as the biggest movie of all time"
 subtitle: "Ahead of Marvel Studios rolling into Phase 4"
 date: 2019-07-28 19:09:21 +0300

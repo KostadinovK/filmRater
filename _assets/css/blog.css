@@ -19,7 +19,7 @@
     margin-bottom: 10rem;
 }
 
-.post-header{
+.post{
     text-decoration: none;
     color: var(--site-third-color);
 }
@@ -27,6 +27,14 @@
 .post-title{
     color: var(--site-main-color);
     margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.post .post-title{
+    font-size: 2rem;
+}
+
+.posts-headers .post:hover .post-title{
     text-decoration: underline;
 }
 
@@ -71,4 +79,90 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.blog-page{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 4rem;
+    padding: 2rem 4rem;
+}
+
+.post{
+    grid-row: 1 / span 3;
+}
+
+.blog-page .post-title{
+    text-decoration: none;
+}
+
+.share{
+    font-weight: bold;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.share ul{
+    display: flex;
+    justify-content: center;
+}
+
+.share ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.share ul li:not(:last-child){
+    margin-right: 2rem;
+}
+
+.share ul li i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.share ul .facebook i{
+    color: rgb(66, 103, 178);
+}
+
+.share ul .twitter i{
+    color: rgb(29, 161, 242);
+}
+
+.post-content{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 4rem;
+}
+
+aside{
+    padding: 2rem;
+    grid-row: 1 / span 2;
+    border-radius: 10px;
+}
+
+aside h2{
+    color: var(--site-main-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+aside ul li{
+    list-style: none;
+}
+
+aside ul li:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+aside ul li a{
+    color: var(--site-third-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+aside ul li a:hover{
+    text-decoration: underline;
 }
