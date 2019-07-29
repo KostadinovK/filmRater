@@ -6,4 +6,21 @@ icon: fa-rss
 permalink: /blog/
 ---
 
-<h1>Blog</h1>
+<h2>Blog</h2>
+
+<div class="content">
+    <ul class="posts-headers">
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="post-header">
+                    <h2>{{ post.title }}</h2>
+                    <h3>{{ post.subtitle }}</h3>
+                    <h4>{{ post.author }} {{ post.date }}</h4>
+                    <div class="post-media">
+                        <img src="{{ post.img }}" alt="blog post image">
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
