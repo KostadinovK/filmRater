@@ -93,13 +93,16 @@
     }
 
     .our-team ul li .member .media:after,
-    .our-team ul li .member .media .info{
+    .our-team ul li .member .media .info,
+    .post-header .post-media:after
+    {
         animation: fadeIn 0.6s linear;
         animation-fill-mode: both;
     }
 
     .our-team ul li .member .media:hover:after,
-    .our-team ul li .member .media:hover .info{
+    .our-team ul li .member .media:hover .info,
+    .post-header:hover .post-media:after{
         animation: fadeOut 0.8s linear;
         animation-fill-mode: both;
     }

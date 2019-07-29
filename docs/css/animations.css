@@ -166,7 +166,9 @@
     }
 
     .our-team ul li .member .media:after,
-    .our-team ul li .member .media .info{
+    .our-team ul li .member .media .info,
+    .post-header .post-media:after
+    {
         -webkit-animation: fadeIn 0.6s linear;
                 animation: fadeIn 0.6s linear;
         -webkit-animation-fill-mode: both;
@@ -174,7 +176,8 @@
     }
 
     .our-team ul li .member .media:hover:after,
-    .our-team ul li .member .media:hover .info{
+    .our-team ul li .member .media:hover .info,
+    .post-header:hover .post-media:after{
         -webkit-animation: fadeOut 0.8s linear;
                 animation: fadeOut 0.8s linear;
         -webkit-animation-fill-mode: both;
