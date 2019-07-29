@@ -3,6 +3,7 @@ layout: main
 title: "Avengers: Endgame finally passes Avatar as the biggest movie of all time"
 subtitle: "Ahead of Marvel Studios rolling into Phase 4"
 date: 2019-07-28 19:09:21 +0300
+writeDate: "28/07/2019 19:00"
 img: https://cdn.vox-cdn.com/thumbor/EeGuiHbGrhWpax0py1gCzTRHbSc=/0x0:2048x1080/920x613/filters:focal(758x154:1084x480):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64774932/AvengersEndgame5cbe860b2f312.0.jpg
 author: Robert Wilson
 ---

@@ -3,6 +3,7 @@ layout: main
 title: "Detective Pikachu surpasses Warcraft as highest-grossing video game film of all time"
 subtitle: "The live-action Pokémon movie takes the crown with $436 million"
 date: 2019-06-29 13:40
+writeDate: "29/06/2019 13:00"
 img: https://cdn.vox-cdn.com/thumbor/rCp_X5imbcN9KtTfcMdWn1FnSWY=/0x0:1920x804/920x613/filters:focal(807x249:1113x555):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64744777/pokemon_detective_pikachu_photo01.0.jpg
 author: Kayla Peers
 ---

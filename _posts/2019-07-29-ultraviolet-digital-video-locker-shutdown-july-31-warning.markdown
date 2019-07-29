@@ -3,6 +3,7 @@ layout: main
 title: "Reminder: UltraViolet shuts down July 31st, so safeguard your digital movies now"
 subtitle: "Now’s the time to get on board with Vudu if you haven’t already"
 date: 2019-07-29 10:09:21 +0300
+writeDate: "29/07/2019 10:00"
 img: https://ultravioletplayer.tv/wp-content/uploads/2014/03/devices.jpg
 author: Robert Wilson
 ---

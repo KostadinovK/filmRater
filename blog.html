@@ -5,22 +5,23 @@ order: 4
 icon: fa-rss
 permalink: /blog/
 ---
+<section class="blog">
+    <h2 class="blog-title">Blog</h2>
 
-<h2>Blog</h2>
-
-<div class="content">
-    <ul class="posts-headers">
-        {% for post in site.posts %}
+    <div class="content">
+        <ul class="posts-headers">
+            {% for post in site.posts %}
             <li>
                 <a href="{{ site.baseurl }}{{ post.url }}" class="post-header">
-                    <h2>{{ post.title }}</h2>
-                    <h3>{{ post.subtitle }}</h3>
-                    <h4>{{ post.author }} {{ post.date }}</h4>
+                    <h2 class="post-title"> {{ post.title }}</h2>
+                    <h5 class="post-subtitle">{{ post.subtitle }}</h5>
+                    <h6 class="post-metadata"> <span class="post-author">{{ post.author }}</span> {{ post.writeDate }}</h6>
                     <div class="post-media">
                         <img src="{{ post.img }}" alt="blog post image">
                     </div>
                 </a>
             </li>
-        {% endfor %}
-    </ul>
-</div>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

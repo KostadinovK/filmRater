@@ -3,6 +3,7 @@ layout: main
 title: "The Art of Self-Defense functions like a 20-year anniversary remake of Fight Club"
 subtitle: "And its take on masculinity, entitlement, and loneliness sheds light on how Fight Club works"
 date: 2019-07-03 16:30:00 +0300
+writeDate: "03/07/2019 16:30"
 img: https://cdn.vox-cdn.com/thumbor/KcArqIGj78X0SrJzyThIX0hSloI=/0x0:4096x2160/920x613/filters:focal(1809x718:2463x1372):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64700972/AOSC_1.17.1.0.jpg
 author: Kayla Peers
 ---
