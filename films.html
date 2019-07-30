@@ -12,11 +12,11 @@ permalink: /films/
     <div class="content">
         <ul class="genres">
             {% for page in site.pages %}
-            {% if page.film-genre %}
-            <li>
-                <a href="{{ site.baseurl }}{{ page.permalink }}" class="genre">{{ page.film-genre }}</a>
-            </li>
-            {% endif %}
+                {% if page.film-genre %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ page.permalink }}" class="genre">{{ page.film-genre }}</a>
+                </li>
+                {% endif %}
             {% endfor %}
         </ul>
     </div>
