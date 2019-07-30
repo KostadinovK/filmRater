@@ -1,5 +1,5 @@
 ---
 layout: film-genre
 film-genre: Comedy
-permalink: /Films/comedy/
+permalink: /reviews/comedy/
 ---
