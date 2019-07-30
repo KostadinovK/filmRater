@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{page.film-genre}} - FilmRater</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+</head>
+<body>
+
+    <div class="site">
+        <header class="site-header">
+            {% include header.html %}
+        </header>
+
+        <main class="site-main">
+            <section class="films">
+                <h2>Films</h2>
+        
+                <div class="content">
+                    <ul>
+                        {% for filmPage in site.pages %}
+                        {% if filmPage.genre and page.film-genre contains filmPage.genre %}
+                        <li>
+                            <a href="{{ site.baseurl }}{{ filmPage.permalink }}" class="film">{{ filmPage.film-title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            {% include footer.html %}
+        </footer>
+    </div>
+
+    
+</body>
+</html>
