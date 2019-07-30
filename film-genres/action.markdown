@@ -1,5 +1,5 @@
 ---
 layout: film-genre
 film-genre: Action
-permalink: /films/action/
+permalink: /Films/action/
 ---
