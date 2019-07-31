@@ -7,14 +7,19 @@ permalink: /films/
 ---
 
 <section class="film-genres">
-    <h2>Genres</h2>
+    <h2 class="section-title"> Genres</h2>
 
     <div class="content">
         <ul class="genres">
             {% for page in site.pages %}
                 {% if page.film-genre %}
                 <li>
-                    <a href="{{ site.baseurl }}{{ page.permalink }}" class="genre">{{ page.film-genre }}</a>
+                    <a href="{{ site.baseurl }}{{ page.permalink }}" class="genre">
+                        <div class="media">
+                            <img src="{{ page.image }}" alt="film genre picture">
+                            <h2>{{ page.film-genre }}</h2>
+                        </div>
+                    </a>
                 </li>
                 {% endif %}
             {% endfor %}
