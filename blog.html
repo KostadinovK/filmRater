@@ -13,12 +13,13 @@ permalink: /blog/
             {% for post in site.posts %}
             <li>
                 <a href="{{ site.baseurl }}{{ post.url }}" class="post">
+                        <div class="post-media">
+                                <img src="{{ post.img }}" alt="blog post image">
+                            </div>
                     <h2 class="post-title"> {{ post.title }}</h2>
                     <h5 class="post-subtitle">{{ post.subtitle }}</h5>
                     <h6 class="post-metadata"> <span class="post-author">{{ post.author }}</span> {{ post.writeDate }}</h6>
-                    <div class="post-media">
-                        <img src="{{ post.img }}" alt="blog post image">
-                    </div>
+                    
                 </a>
             </li>
             {% endfor %}
