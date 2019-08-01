@@ -19,6 +19,7 @@
     border: 2px solid var(--site-main-color);
     border-radius: 10px;
     padding: 2rem;
+    box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
 }
 
 .film-card .film-card-media{
