@@ -11,6 +11,7 @@ resume: Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance whe
 year: 2019
 trailer: https://www.youtube.com/embed/HZ7PAyCDwEg
 rating: 8
+author: Victoria Jennson
 ---
 
 Fast&Furious

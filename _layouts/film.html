@@ -17,8 +17,8 @@
         <main class="film-page">
             <section class="film">
                 <div class="heading">
-                    <h2>{{ page.film-title }}</h2>
-                    <p>{{ page.year }}</p>
+                    <h2>{{ page.film-title }} </h2>
+                    <p>({{ page.year }})</p> 
                 </div>
                 <iframe width="840" height="630"  src="{{ page.trailer }}">
                 </iframe>
@@ -32,7 +32,15 @@
                     </div>
                     <div class="review">
                         <h2>Review</h2>
+                        <div class="share">
+                            <ul>
+                                <li class="facebook"><i class="fab fa-facebook-square"></i></li>
+                                <li class="twitter"><i class="fab fa-twitter-square"></i></li>
+                                <li class="link"><i class="fas fa-link"></i></li>
+                            </ul>
+                        </div>
                         {{ content }}
+                        <p class="author"><span>Written by</span> {{ page.author }}</p>
                     </div>
                 </div>
             </section>

@@ -226,7 +226,8 @@
             animation-delay: 0.9s;
 }
 
-.other-posts h2{
+.other-posts h2,
+.other-films h2{
     -webkit-animation: fadeInWithMovementAtLeft 0.2s linear;
             animation: fadeInWithMovementAtLeft 0.2s linear;
     -webkit-animation-fill-mode: both;
@@ -235,7 +236,8 @@
             animation-delay: 1.2s;
 }
 
-.other-posts ul li{
+.other-posts ul li,
+.other-films ul li{
     -webkit-animation: fadeInWithMovementAtLeft 0.2s linear;
             animation: fadeInWithMovementAtLeft 0.2s linear;
     -webkit-animation-fill-mode: both;
@@ -251,3 +253,14 @@
 .other-posts ul li:nth-child(7){ -webkit-animation-delay: 2.6s; animation-delay: 2.6s; }
 .other-posts ul li:nth-child(8){ -webkit-animation-delay: 2.8s; animation-delay: 2.8s; }
 .other-posts ul li:nth-child(9){ -webkit-animation-delay: 3s; animation-delay: 3s; }
+
+
+.other-films ul li:nth-child(1){ -webkit-animation-delay: 1.4s; animation-delay: 1.4s; }
+.other-films ul li:nth-child(2){ -webkit-animation-delay: 1.6s; animation-delay: 1.6s; }
+.other-films ul li:nth-child(3){ -webkit-animation-delay: 1.8s; animation-delay: 1.8s; }
+.other-films ul li:nth-child(4){ -webkit-animation-delay: 2s; animation-delay: 2s; }
+.other-films ul li:nth-child(5){ -webkit-animation-delay: 2.2s; animation-delay: 2.2s; }
+.other-films ul li:nth-child(6){ -webkit-animation-delay: 2.4s; animation-delay: 2.4s; }
+.other-films ul li:nth-child(7){ -webkit-animation-delay: 2.6s; animation-delay: 2.6s; }
+.other-films ul li:nth-child(8){ -webkit-animation-delay: 2.8s; animation-delay: 2.8s; }
+.other-films ul li:nth-child(9){ -webkit-animation-delay: 3s; animation-delay: 3s; }

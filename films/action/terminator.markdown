@@ -11,6 +11,7 @@ resume: A seemingly indestructible robot is sent from 2029 to 1984 to assassinat
 year: 1985
 trailer: https://www.youtube.com/embed/k64P4l2Wmeg
 rating: 7
+author: John Smith
 ---
 
 Terminator
