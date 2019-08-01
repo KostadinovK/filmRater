@@ -193,7 +193,8 @@
     .our-team ul li .member .media .info,
     .posts-headers .post .post-media:after,
     .film-genres .media:after,
-    .film-genres .media h2
+    .film-genres .media h2,
+    .film-card .film-card-media:after
     {
         -webkit-animation: fadeIn 0.6s linear;
                 animation: fadeIn 0.6s linear;
@@ -205,7 +206,8 @@
     .our-team ul li .member .media:hover .info,
     .posts-headers .post:hover .post-media:after,
     .film-genres a:hover .media h2,
-    .film-genres a:hover .media:after{
+    .film-genres a:hover .media:after,
+    .film-card .film-card-media:hover:after{
         -webkit-animation: fadeOut 0.8s linear;
                 animation: fadeOut 0.8s linear;
         -webkit-animation-fill-mode: both;
