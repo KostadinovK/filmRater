@@ -20,18 +20,20 @@
                     <h2>{{ page.film-title }}</h2>
                     <p>{{ page.year }}</p>
                 </div>
-                <iframe width="840" height="630" src="{{ page.trailer }}">
+                <iframe width="840" height="630"  src="{{ page.trailer }}">
                 </iframe>
-                <div class="info">
-                    <p class="duration"><span>Duration:</span> {{ page.duration }}</p>
-                    <p class="rating"><i class="fas fa-star"></i> {{ page.rating}} / 10</p>
-                    <p class="resume">{{ page.resume }}</p>
-                    <p class="director"><span>Director:</span> {{ page.director }}</p>
-                    <p class="stars"><span>Stars:</span> {{ page.stars }}</p>
-                </div>
-                <div class="review">
-                    <h2>Review</h2>
-                    {{ content }}
+                <div class="main-content">
+                    <div class="info">
+                        <p class="duration"><span>Duration:</span> {{ page.duration }}</p>
+                        <p class="rating"><i class="fas fa-star"></i> {{ page.rating}} / 10</p>
+                        <p class="resume">{{ page.resume }}</p>
+                        <p class="director"><span>Director:</span> {{ page.director }}</p>
+                        <p class="stars"><span>Stars:</span> {{ page.stars }}</p>
+                    </div>
+                    <div class="review">
+                        <h2>Review</h2>
+                        {{ content }}
+                    </div>
                 </div>
             </section>
 
