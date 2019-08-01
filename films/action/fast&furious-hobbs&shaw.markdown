@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: film
 film-title: "Fast & Furious: Hobbs & Shaw" 
 genre: Action
 permalink: /films/action/fast-and-furious/
@@ -9,8 +9,8 @@ director: David Leitch
 stars:  Dwayne Johnson, Jason Statham, Idris Elba, Vanessa Kirby
 resume: Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance when a cyber-genetically enhanced villain threatens the future of humanity.
 year: 2019
-trailer: https://www.youtube.com/watch?v=HZ7PAyCDwEg
+trailer: https://www.youtube.com/embed/HZ7PAyCDwEg
 rating: 8
 ---
 
-<h1>Fast&Furious</h1>
+Fast&Furious

@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: film
 film-title: Baby Driver 
 genre: Action
 permalink: /films/action/baby-driver/
@@ -9,8 +9,8 @@ director: Edgar Wright
 stars:  Ansel Elgort, Jon Bernthal, Jon Hamm
 resume: After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.
 year: 2017
-trailer: https://www.youtube.com/watch?v=z2z857RSfhk
+trailer: https://www.youtube.com/embed/z2z857RSfhk
 rating: 7.8
 ---
 
-<h1>Baby Driver</h1>
+Baby Driver
