@@ -2,100 +2,100 @@
     width: 50%;
     margin: 0 auto;
     padding: 2rem 0;
-}
 
-.blog .blog-title{
-    text-align: center;
-    font-size: 4rem;
-    color: var(--site-main-color);
-    margin-bottom: 6rem;
-}
+    &-title{
+        text-align: center;
+        font-size: 4rem;
+        color: var(--site-main-color);
+        margin-bottom: 6rem;
+    }
 
-.blog .posts-headers li{
-    list-style: none;
-}
+    .posts-headers li{
+        list-style: none;
 
-.blog .posts-headers li:not(:last-child){
-    margin-bottom: 10rem;
+        &:not(:last-child){
+            margin-bottom: 10rem;
+        }
+        
+    }
 }
 
 .post{
     text-decoration: none;
     color: var(--site-third-color);
+    
+
+    &-title{
+        color: var(--site-main-color);
+        margin-bottom: 1rem;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    &:hover &-title{
+        text-decoration: underline;
+    }
+
+    &-subtitle{
+        margin-bottom: 2rem;
+    }
+
+    &-metadata{
+        text-align: end;
+        padding-right: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &-author{
+        color: var(--site-main-color);
+    }
+
+    &-media{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
+        margin-bottom: 2rem;
+
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        img{
+            max-height: 600px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .post-header:hover &:after{
+            opacity: 0;
+        }
+    }
 }
 
-.post-title{
-    color: var(--site-main-color);
-    margin-bottom: 1rem;
-    text-decoration: none;
-}
-
-.post .post-title{
-    font-size: 2rem;
-}
-
-.posts-headers .post:hover .post-title{
-    text-decoration: underline;
-}
-
-.post-subtitle{
-    margin-bottom: 2rem;
-}
-
-.post-metadata{
-    text-align: end;
-    padding-right: 3rem;
-    margin-bottom: 2rem;
-}
-
-.post-author{
-    color: var(--site-main-color);
-}
-
-.post-media{
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
-    margin-bottom: 2rem;
-}
-
-.post-media:after{
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.post-header:hover .post-media:after{
-    opacity: 0;
-}
-
-.post-media img{
-    max-height: 600px;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
+//Blog post details styling
 .blog-page{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 4rem;
     padding: 2rem 4rem;
+
+    .post-title{
+        text-decoration: none;
+    }
 }
 
 .post{
     grid-row: 1 / span 3;
-}
-
-.blog-page .post-title{
-    text-decoration: none;
 }
 
 .share{
@@ -103,33 +103,33 @@
     width: 30%;
     margin: 0 auto;
     margin-bottom: 4rem;
-}
 
-.share ul{
-    display: flex;
-    justify-content: center;
-}
+    ul{
+        display: flex;
+        justify-content: center;
+    }
 
-.share ul li{
-    list-style: none;
-    text-align: center;
-}
+    li{
+        list-style: none;
+        text-align: center;
 
-.share ul li:not(:last-child){
-    margin-right: 2rem;
-}
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
 
-.share ul li i{
-    font-size: 3rem;
-    cursor: pointer;
-}
+        i{
+            font-size: 3rem;
+            cursor: pointer;
+        }
+    }
 
-.share ul .facebook i{
-    color: rgb(66, 103, 178);
-}
+    .facebook i{
+        color: rgb(66, 103, 178);
+    }
 
-.share ul .twitter i{
-    color: rgb(29, 161, 242);
+    .twitter i{
+        color: rgb(29, 161, 242);
+    }
 }
 
 .post-content{
@@ -142,28 +142,28 @@ aside{
     padding: 2rem;
     grid-row: 1 / span 2;
     border-radius: 10px;
-}
 
-aside h2{
-    color: var(--site-main-color);
-    text-align: center;
-    margin-bottom: 4rem;
-}
+    h2{
+        color: var(--site-main-color);
+        text-align: center;
+        margin-bottom: 4rem;
+    }
 
-aside ul li{
-    list-style: none;
-}
+    li{
+        list-style: none;
 
-aside ul li:not(:last-child){
-    margin-bottom: 2rem;
-}
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
 
-aside ul li a{
-    color: var(--site-third-color);
-    font-size: 1.4rem;
-    text-decoration: none;
-}
+    & a{
+        color: var(--site-third-color);
+        font-size: 1.4rem;
+        text-decoration: none;
 
-aside ul li a:hover{
-    text-decoration: underline;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
