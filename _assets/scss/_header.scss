@@ -4,8 +4,31 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    input{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label{
+        display: none;
+
+        @include responsive(tablet){
+            display: block;
+        }
+
+        i{
+            color: var(--site-main-color);
+            font-size: 2rem;
+        }
+
+        span{
+            color: var(--site-main-color);
+            font-size: 2rem;
+        }
+    }
     div.logo{
-        flex: 0 1 40%;
+        flex: 0 0 30%;
+        margin-right: auto;
 
         a{
             text-decoration: none;
@@ -21,7 +44,7 @@ header{
     }
 
     nav{
-        flex: 0 0 50%;
+        flex: 0 0 70%;
         height: 100%;
         display: flex;
 
@@ -58,4 +81,76 @@ header{
 .selected a{
     background-color: var(--site-main-color);
     color: var(--site-second-color);
+}
+
+@include responsive(tablet){
+    header{
+        flex-wrap: wrap;
+    }
+
+    header div.logo{
+        flex: 1 1 100%;
+        margin-right: 0;
+        text-align: center;
+        
+    }
+
+    header div.logo a{
+        font-size: 3.5rem;
+    }
+
+    header div.logo p{
+        font-size: 2rem;
+    }
+
+    header nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+    }
+
+    nav label {
+        margin-bottom: 1rem;
+    }
+
+    input + nav ul{
+        display: none;
+    }
+
+    input + nav label span.open{
+        display: inline;
+        font-weight: bold;
+    }
+
+    input + nav label span.close{
+        display: none;
+    }
+
+    input:checked + nav label span.close{
+        display: inline;
+        font-weight: bold;
+    }
+
+    input:checked + nav a{
+        padding: 1rem 0;
+    }
+
+    input:checked + nav label span.open{
+       display: none;
+    }
+
+    input:checked + nav ul{
+        display: block;
+        border-top: 2px solid var(--site-main-color);
+        border-bottom: 2px solid var(--site-main-color);
+    }
+
+    header nav ul li:first-child{
+        margin-top: 0.5rem;
+    }
+
+    header nav ul li{
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
 }

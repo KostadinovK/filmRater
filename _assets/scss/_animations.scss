@@ -74,8 +74,7 @@
     }
 }
 
-/*Home page animations*/
-@media(min-width: 1200px){
+@include responsive( laptop ) {
     header nav ul li{
         opacity: 0;
         animation: fadeInWithMovementAtRight 0.3s linear;
@@ -96,12 +95,7 @@
         }
     }
 
-    .cta a{
-        opacity: 0;
-        animation: fadeIn 1.5s linear;
-        animation-fill-mode: both;
-        animation-delay: 1s;
-    }
+    
 
     .our-team ul li .member .media:after,
     .our-team ul li .member .media .info,
@@ -123,6 +117,13 @@
         animation: fadeOut 0.8s linear;
         animation-fill-mode: both;
     }
+}
+
+.cta a{
+    opacity: 0;
+    animation: fadeIn 1.5s linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
 }
 
 /*About Page animations*/

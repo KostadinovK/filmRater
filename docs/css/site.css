@@ -48,7 +48,7 @@ h5 {
 h6 {
   font-size: 1.2rem; }
 
-@media (min-width: 600px) {
+@media (min-width: 1160px) {
   html {
     font-size: var(--site-font-size-larger); } }
 
@@ -148,8 +148,7 @@ h6 {
     background-color: var(--site-main-color);
     color: var(--site-second-color); } }
 
-/*Home page animations*/
-@media (min-width: 1200px) {
+@media (min-width: 1160px) {
   header nav ul li {
     opacity: 0;
     -webkit-animation: fadeInWithMovementAtRight 0.3s linear;
@@ -178,14 +177,6 @@ h6 {
                 animation: changeColorSecondToMain 0.3s linear;
         -webkit-animation-fill-mode: both;
                 animation-fill-mode: both; }
-  .cta a {
-    opacity: 0;
-    -webkit-animation: fadeIn 1.5s linear;
-            animation: fadeIn 1.5s linear;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s; }
   .our-team ul li .member .media:after,
   .our-team ul li .member .media .info,
   .posts-headers .post .post-media:after,
@@ -206,6 +197,15 @@ h6 {
             animation: fadeOut 0.8s linear;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; } }
+
+.cta a {
+  opacity: 0;
+  -webkit-animation: fadeIn 1.5s linear;
+          animation: fadeIn 1.5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
 
 /*About Page animations*/
 .about-filmRater h3 {
@@ -321,6 +321,9 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
+    @media (max-width: 1023px) {
+      .cta div {
+        width: 100%; } }
   .cta a {
     background: var(--site-main-color);
     border-radius: 10px;
@@ -330,6 +333,9 @@ h6 {
     flex: 0 0 55%;
     padding: 1rem;
     border: 2px solid var(--site-main-color); }
+    @media (max-width: 1023px) {
+      .cta a {
+        flex: 1 1 100%; } }
     .cta a:nth-child(1) {
       margin-bottom: 2rem; }
     .cta a:hover {
@@ -340,9 +346,18 @@ h6 {
   width: 80%;
   margin: 6rem auto;
   padding: 0 2rem; }
+  @media (max-width: 1023px) {
+    .our-team ul {
+      flex-wrap: wrap; } }
   .our-team li {
     flex: 0 0 22%;
     list-style: none; }
+    @media (max-width: 1023px) {
+      .our-team li {
+        flex: 1 1 100%; } }
+    @media (max-width: 1023px) {
+      .our-team li:not(:last-child) {
+        margin-bottom: 3rem; } }
     .our-team li .member {
       text-align: center; }
       .our-team li .member .media {
@@ -353,6 +368,10 @@ h6 {
         z-index: 1;
         border-radius: 5px;
         box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75); }
+        @media (max-width: 1023px) {
+          .our-team li .member .media {
+            width: 80%;
+            margin: 0 auto; } }
         .our-team li .member .media:hover {
           cursor: pointer; }
         .our-team li .member .media:after {
@@ -407,30 +426,49 @@ h6 {
     color: var(--site-second-color);
     margin-bottom: 2rem; }
   .newsletter form p {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly; }
+    @media (max-width: 1023px) {
+      .newsletter form p {
+        width: 70%; } }
     .newsletter form p input {
-      flex: 0 0 45%;
       border-radius: 5px; }
+      @media (max-width: 1159px) {
+        .newsletter form p input {
+          flex: 1 1 100%; } }
       .newsletter form p input[type='email'] {
-        padding: 0.4rem; }
+        padding: 0.4rem;
+        flex: 0 0 80%;
+        margin-bottom: 1rem; }
       .newsletter form p input[type='submit'] {
+        flex: 0 0 25%;
         background: var(--site-second-color);
         outline: none;
         border: none;
         color: var(--site-main-color);
         font-weight: bold;
-        cursor: pointer; }
+        cursor: pointer;
+        padding: 0.5rem 0; }
+        @media (max-width: 1023px) {
+          .newsletter form p input[type='submit'] {
+            flex: 0 0 40%; } }
 
 .reviews-about-us {
   width: 80%;
   margin: 6rem auto; }
+  @media (max-width: 1023px) {
+    .reviews-about-us ul {
+      flex-wrap: wrap; } }
   .reviews-about-us ul li {
     text-align: center;
     flex: 0 0 30%;
     list-style: none; }
+    @media (max-width: 1023px) {
+      .reviews-about-us ul li {
+        flex: 1 1 100%; } }
   .reviews-about-us .testimonial img {
     display: block;
     width: 100%;
@@ -833,8 +871,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  header input {
+    opacity: 0;
+    pointer-events: none; }
+  header label {
+    display: none; }
+    @media (max-width: 1159px) {
+      header label {
+        display: block; } }
+    header label i {
+      color: var(--site-main-color);
+      font-size: 2rem; }
+    header label span {
+      color: var(--site-main-color);
+      font-size: 2rem; }
   header div.logo {
-    flex: 0 1 40%; }
+    flex: 0 0 30%;
+    margin-right: auto; }
     header div.logo a {
       text-decoration: none;
       color: var(--site-main-color);
@@ -844,7 +897,7 @@ header {
     header div.logo p {
       color: var(--site-main-color); }
   header nav {
-    flex: 0 0 50%;
+    flex: 0 0 70%;
     height: 100%;
     display: flex; }
     header nav ul {
@@ -872,6 +925,47 @@ header {
   background-color: var(--site-main-color);
   color: var(--site-second-color); }
 
+@media (max-width: 1159px) {
+  header {
+    flex-wrap: wrap; }
+  header div.logo {
+    flex: 1 1 100%;
+    margin-right: 0;
+    text-align: center; }
+  header div.logo a {
+    font-size: 3.5rem; }
+  header div.logo p {
+    font-size: 2rem; }
+  header nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 100%; }
+  nav label {
+    margin-bottom: 1rem; }
+  input + nav ul {
+    display: none; }
+  input + nav label span.open {
+    display: inline;
+    font-weight: bold; }
+  input + nav label span.close {
+    display: none; }
+  input:checked + nav label span.close {
+    display: inline;
+    font-weight: bold; }
+  input:checked + nav a {
+    padding: 1rem 0; }
+  input:checked + nav label span.open {
+    display: none; }
+  input:checked + nav ul {
+    display: block;
+    border-top: 2px solid var(--site-main-color);
+    border-bottom: 2px solid var(--site-main-color); }
+  header nav ul li:first-child {
+    margin-top: 0.5rem; }
+  header nav ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer; } }
+
 footer {
   background: var(--site-main-color);
   color: var(--site-second-color);
@@ -879,6 +973,12 @@ footer {
   display: grid;
   grid-template-columns: [content-start] repeat(3, 1fr) [content-end];
   grid-template-rows: 100px 20px; }
+  @media (max-width: 1023px) {
+    footer {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, 1fr) 20px;
+      grid-gap: 1rem; } }
   footer h2 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -887,6 +987,12 @@ footer {
     text-align: center; }
     footer .footer-text h2 {
       margin-bottom: 0.5rem; }
+  @media (max-width: 1023px) {
+    footer .contact-us {
+      grid-row: 2 / span 1; } }
+  @media (max-width: 1023px) {
+    footer .contact-us h2 {
+      margin-bottom: 0.5rem; } }
   footer .contact-us ul {
     display: flex;
     flex-wrap: wrap;
@@ -895,17 +1001,32 @@ footer {
       list-style: none;
       flex: 0 0 45%;
       text-align: center; }
+      @media (max-width: 1159px) {
+        footer .contact-us ul li {
+          flex: 1 1 100%;
+          margin-bottom: 1rem; } }
+  @media (max-width: 1023px) {
+    footer .follow-us {
+      grid-row: 3 / span 1; } }
   footer .follow-us ul {
     display: flex;
     justify-content: center; }
-    footer .follow-us ul li {
-      list-style: none;
-      flex: 0 0 10%;
-      text-align: center; }
-    footer .follow-us ul i {
-      color: var(--site-second-color);
-      font-size: 1.5rem; }
+  footer .follow-us li {
+    list-style: none;
+    flex: 0 0 10%;
+    text-align: center; }
+  footer .follow-us i {
+    color: var(--site-second-color);
+    font-size: 1.5rem; }
+    @media (max-width: 1023px) {
+      footer .follow-us i {
+        font-size: 2rem; } }
   footer .rights {
     text-align: center;
     grid-column: content-start / content-end;
     margin-bottom: 0; }
+    @media (max-width: 1023px) {
+      footer .rights {
+        grid-row: 4 / span 1;
+        text-align: center;
+        grid-column: 1 / span 1; } }

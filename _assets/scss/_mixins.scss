@@ -13,7 +13,13 @@
     }
 
     @else if $device == laptop {
-        @media (min-width: 1024px) {
+        @media (min-width: 1160px) {
+            @content;
+        }
+    }
+
+    @else if $device == tablet {
+        @media (max-width: 1159px) {
             @content;
         }
     }
