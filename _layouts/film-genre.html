@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include head.html %}
     <title>{{page.film-genre}} - FilmRater</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <div class="site">
@@ -20,7 +16,7 @@
         <main class="site-main">
             <section class="films">
                 <h2>{{ page.film-genre }}</h2>
-        
+
                 <div class="content">
                     <ul>
                         {% for filmPage in site.pages %}
@@ -32,7 +28,9 @@
                                 </a>
                             </div>
                             <div class="film-card-content">
-                                <p class="title"><a href="{{ site.baseurl }}{{ filmPage.permalink }}">{{ filmPage.film-title }}</a><span> ({{ filmPage.year }})</span></p>
+                                <p class="title"><a
+                                        href="{{ site.baseurl }}{{ filmPage.permalink }}">{{ filmPage.film-title }}</a><span>
+                                        ({{ filmPage.year }})</span></p>
                                 <p class="duration"><span>Duration:</span> {{ filmPage.duration }}</p>
                                 <p class="rating"><i class="fas fa-star"></i> {{ filmPage.rating}} / 10</p>
                                 <p class="resume">{{ filmPage.resume }}</p>
@@ -52,6 +50,7 @@
         </footer>
     </div>
 
-    
+
 </body>
+
 </html>

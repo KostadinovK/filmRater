@@ -1,4 +1,3 @@
-
 <div class="logo">
     <a href="{{site.baseurl}}/">
         FilmRater
@@ -7,19 +6,20 @@
 </div>
 <input type="checkbox" name="toggle" id="toggle" class="nav-toggle">
 <nav class="site-nav">
-    <label for="toggle"><span class="close">X Close </span><span class="open"><i class="fas fa-bars"></i> Menu</span></label>
+    <label for="toggle"><span class="close">X Close </span><span class="open"><i class="fas fa-bars"></i>
+            Menu</span></label>
     <ul>
         {% assign nav = site.pages | sort:"order" %}
         {% for item in nav %}
-            {% if item.title %}    
-            <li{% if item.url == page.url %} class="selected"{% endif %}
-            {% if item.url != page.url %} class="animate"{% endif %}>
-                <a href="{{ site.baseurl }}{{ item.url }}">
-                    {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
-                    {{ item.title }}
-                </a>
+        {% if item.title %}
+        <li{% if item.url == page.url %} class="selected" {% endif %} {% if item.url != page.url %} class="animate"
+            {% endif %}>
+            <a href="{{ site.baseurl }}{{ item.url }}">
+                {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
+                {{ item.title }}
+            </a>
             </li>
             {% endif %}
-        {% endfor %}
+            {% endfor %}
     </ul>
 </nav>
