@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Wrong Turn
 genre: Horror
 permalink: /films/comedy/wrong-turn/

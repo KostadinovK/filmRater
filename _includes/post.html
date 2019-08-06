@@ -1,0 +1,33 @@
+<main class="blog-page">
+    <section class="post">
+        <h2 class="post-title"> {{ page.title }}</h2>
+        <h5 class="post-subtitle">{{ page.subtitle }}</h5>
+        <h6 class="post-metadata"> <span class="post-author">{{ page.author }}</span> {{ page.writeDate }}</h6>
+        <div class="share">
+            <ul>
+                <li class="facebook"><i class="fab fa-facebook-square"></i></li>
+                <li class="twitter"><i class="fab fa-twitter-square"></i></li>
+                <li class="link"><i class="fas fa-link"></i></li>
+            </ul>
+        </div>
+        <div class="post-media">
+            <img src="{{ page.img }}" alt="blog post image">
+        </div>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </section>
+
+    <aside class="other-posts">
+        <h2>Other posts: </h2>
+        <ul class="remaining-posts">
+            {% for post in site.posts %}
+            {% if post.title != page.title %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </aside>
+</main>

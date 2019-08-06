@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: The Shining
 genre: Horror
 permalink: /films/comedy/the-shining/

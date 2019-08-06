@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: We're the Millers
 genre: Comedy
 permalink: /films/comedy/we-are-the-millers/

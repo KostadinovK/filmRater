@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: One Flew Over the Cuckoo's Nest 
 genre: Drama
 permalink: /films/comedy/one-flew-over-the-cuckoo-nest/

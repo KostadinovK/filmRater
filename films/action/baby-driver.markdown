@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Baby Driver 
 genre: Action
 permalink: /films/action/baby-driver/

@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: A Quiet Place
 genre: Horror
 permalink: /films/comedy/a-quiet-place/

@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: True Grit
 genre: Western
 permalink: /films/comedy/true-grit/

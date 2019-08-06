@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Avatar
 genre: Sci-Fi
 permalink: /films/comedy/avatar/

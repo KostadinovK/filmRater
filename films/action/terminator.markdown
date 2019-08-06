@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: The Terminator 
 genre: Action
 permalink: /films/action/terminator/

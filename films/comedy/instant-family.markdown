@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Instant Family
 genre: Comedy
 permalink: /films/comedy/instant-family/

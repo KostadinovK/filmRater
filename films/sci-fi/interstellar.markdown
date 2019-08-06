@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Interstellar
 genre: Sci-Fi
 permalink: /films/comedy/interstellar/

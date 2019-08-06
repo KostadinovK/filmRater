@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: American Pie
 genre: Comedy
 permalink: /films/comedy/americanpie/

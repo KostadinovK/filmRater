@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: "Fast & Furious: Hobbs & Shaw" 
 genre: Action
 permalink: /films/action/fast-and-furious/

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main
 title: "Netflix’s Mindhunter will return for a second season in August"
 subtitle: "It’ll focus on the Atlanta child murders of 1979–1981"
 date: 2019-07-12 12:00:00 +0300

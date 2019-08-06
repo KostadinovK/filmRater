@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: A Million Ways to Die in the West
 genre: Western
 permalink: /films/comedy/a-million-ways-to-die-in-the-west/

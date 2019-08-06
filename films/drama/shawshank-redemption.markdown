@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: The Shawshank Redemption
 genre: Drama
 permalink: /films/comedy/shawshank-redemption/

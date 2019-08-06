@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Star Wars The Last Jedi
 genre: Sci-Fi
 permalink: /films/comedy/star-wars-the-last-jedi/

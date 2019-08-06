@@ -12,9 +12,21 @@
             {% include header.html %}
         </header>
 
-        <main class="site-main">
-            {{content}}
-        </main>
+
+        {% if page.order %}
+            <main class="site-main">
+                {{content}}
+            </main>
+        {% elsif page.film-title %}
+            {% include film.html %}
+        
+        {% elsif page.film-genre %}
+            {% include film-genre.html %}
+        
+        {% elsif page.author %}
+            {% include post.html %}
+        {% endif %}
+
 
         <footer class="site-footer">
             {% include footer.html %}

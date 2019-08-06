@@ -1,5 +1,5 @@
 ---
-layout: film
+layout: main
 film-title: Rocky
 genre: Drama
 permalink: /films/comedy/rocky/
