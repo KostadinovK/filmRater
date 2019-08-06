@@ -1,16 +1,11 @@
 .about-filmRater{
     padding: 6rem 4rem;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
     background: url(http://getwallpapers.com/wallpaper/full/f/1/b/375459.jpg) center center;
     background-size: center;
     position: relative;
     z-index: 1;
-
-    @include responsive(mobile){
-        width: 90%;
-    }
 
     @include responsive(phone){
         padding: 2rem;
