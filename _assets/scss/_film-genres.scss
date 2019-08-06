@@ -5,6 +5,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
 
+    @include responsive(mobile){
+        width: 90%;
+    }
+
     .section-title{
         grid-column: 1 / span 2;
         font-size: 4rem;
@@ -70,6 +74,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-bottom: 4rem;
+
+    @include responsive(mobile){
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     li{
         list-style: none;

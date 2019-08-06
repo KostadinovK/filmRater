@@ -164,55 +164,56 @@ h6 {
     background-color: var(--site-main-color);
     color: var(--site-second-color); } }
 
-@media (min-width: 1160px) {
-  header nav ul li {
-    opacity: 0;
-    -webkit-animation: fadeInWithMovementAtRight 0.3s linear;
-            animation: fadeInWithMovementAtRight 0.3s linear;
+header nav ul li {
+  opacity: 0;
+  -webkit-animation: fadeInWithMovementAtRight 0.3s linear;
+          animation: fadeInWithMovementAtRight 0.3s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+  header nav ul li:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  header nav ul li:nth-child(2) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  header nav ul li:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; }
+  header nav ul li:nth-child(4) {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s; }
+  header nav ul li.animate a {
+    -webkit-animation: changeColorMainToSecond 0.3s linear;
+            animation: changeColorMainToSecond 0.3s linear;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
-    header nav ul li:nth-child(1) {
-      -webkit-animation-delay: 0s;
-              animation-delay: 0s; }
-    header nav ul li:nth-child(2) {
-      -webkit-animation-delay: 0.3s;
-              animation-delay: 0.3s; }
-    header nav ul li:nth-child(3) {
-      -webkit-animation-delay: 0.6s;
-              animation-delay: 0.6s; }
-    header nav ul li:nth-child(4) {
-      -webkit-animation-delay: 0.9s;
-              animation-delay: 0.9s; }
-    header nav ul li.animate a {
-      -webkit-animation: changeColorMainToSecond 0.3s linear;
-              animation: changeColorMainToSecond 0.3s linear;
+    header nav ul li.animate a:hover {
+      -webkit-animation: changeColorSecondToMain 0.3s linear;
+              animation: changeColorSecondToMain 0.3s linear;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
-      header nav ul li.animate a:hover {
-        -webkit-animation: changeColorSecondToMain 0.3s linear;
-                animation: changeColorSecondToMain 0.3s linear;
-        -webkit-animation-fill-mode: both;
-                animation-fill-mode: both; }
-  .our-team ul li .member .media:after,
-  .our-team ul li .member .media .info,
-  .posts-headers .post .post-media:after,
-  .film-genres .media:after,
-  .film-genres .media h2,
-  .film-card .film-card-media:after {
-    -webkit-animation: fadeIn 0.6s linear;
-            animation: fadeIn 0.6s linear;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both; }
-  .our-team ul li .member .media:hover:after,
-  .our-team ul li .member .media:hover .info,
-  .posts-headers .post:hover .post-media:after,
-  .film-genres a:hover .media h2,
-  .film-genres a:hover .media:after,
-  .film-card .film-card-media:hover:after {
-    -webkit-animation: fadeOut 0.8s linear;
-            animation: fadeOut 0.8s linear;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both; } }
+
+.our-team ul li .member .media:after,
+.our-team ul li .member .media .info,
+.posts-headers .post .post-media:after,
+.film-genres .media:after,
+.film-genres .media h2,
+.film-card .film-card-media:after {
+  -webkit-animation: fadeIn 0.6s linear;
+          animation: fadeIn 0.6s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.our-team ul li .member .media:hover:after,
+.our-team ul li .member .media:hover .info,
+.posts-headers .post:hover .post-media:after,
+.film-genres a:hover .media h2,
+.film-genres a:hover .media:after,
+.film-card .film-card-media:hover:after {
+  -webkit-animation: fadeOut 0.8s linear;
+          animation: fadeOut 0.8s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 .cta a {
   opacity: 0;
@@ -656,6 +657,9 @@ h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem; }
+  @media (max-width: 1023px) {
+    .film-genres {
+      width: 90%; } }
   .film-genres .section-title {
     grid-column: 1 / span 2;
     font-size: 4rem;
@@ -707,12 +711,19 @@ h6 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-bottom: 4rem; }
+  @media (max-width: 1023px) {
+    .genres {
+      display: grid;
+      grid-template-columns: 1fr; } }
   .genres li {
     list-style: none; }
 
 .films {
   width: 60%;
   margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .films {
+      width: 70%; } }
   .films h2 {
     text-align: center;
     font-size: 4rem;
@@ -729,6 +740,10 @@ h6 {
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75); }
+  @media (max-width: 1023px) {
+    .film-card {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem; } }
   .film-card .film-card-media {
     overflow: hidden;
     position: relative;
@@ -781,15 +796,27 @@ h6 {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   padding: 2rem 4rem; }
+  @media (max-width: 1159px) {
+    .film-page {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+      grid-gap: 4rem; } }
   .film-page .film {
     grid-row: 1 / span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem; }
+    @media (max-width: 1159px) {
+      .film-page .film {
+        grid-template-columns: 1fr; } }
     .film-page .film .heading {
       grid-column: 1 / span 3;
       grid-row: 1 / span 1;
       text-align: center; }
+      @media (max-width: 1159px) {
+        .film-page .film .heading {
+          grid-column: 1 / span 1;
+          grid-row: 1 / span 1; } }
       .film-page .film .heading h2 {
         font-size: 3rem;
         color: var(--site-main-color); }
@@ -800,9 +827,19 @@ h6 {
     .film-page .film iframe {
       grid-column: 2 / span 1;
       grid-row: 2 / span 1; }
+      @media (max-width: 1159px) {
+        .film-page .film iframe {
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          width: 100%;
+          height: 40vh; } }
     .film-page .film .main-content {
       grid-column: 2 / span 1;
       grid-row: 3 / span 1; }
+      @media (max-width: 1159px) {
+        .film-page .film .main-content {
+          grid-column: 1 / span 1;
+          grid-row: 3 / span 1; } }
     .film-page .film p {
       font-size: 1.5rem;
       line-height: 1.5; }
@@ -828,6 +865,9 @@ h6 {
     margin-top: 3rem;
     color: var(--site-main-color);
     font-weight: bold; }
+    @media (max-width: 1159px) {
+      .film-page .review .author {
+        margin-top: 1rem; } }
 
 .author span {
   font-style: italic;
