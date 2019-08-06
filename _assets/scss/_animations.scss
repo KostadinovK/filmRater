@@ -50,6 +50,18 @@
     }
 }
 
+@keyframes fadeInWithMovementAtBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes changeColorMainToSecond{
     0%{
         background-color: var(--site-main-color);
@@ -156,5 +168,23 @@
 
     @for $i from 1 through 9{
         &:nth-child(#{$i}) { animation-delay: 1.2s + 0.2s * $i;}
+    }
+}
+
+input:checked + nav ul{
+    @include responsive(mobile){
+        animation: fadeInWithMovementAtBottom 0.2s linear;
+        animation-fill-mode: both;
+    }   
+}
+
+input:checked + nav ul li{
+    @include responsive(mobile){
+        animation: fadeInWithMovementAtBottom 0.2s linear;
+        animation-fill-mode: both;
+
+        @for $i from 1 through 9{
+            &:nth-child(#{$i}) { animation-delay: 0.1s * $i;}
+        }
     }
 }

@@ -116,6 +116,22 @@ h6 {
     opacity: 1;
     transform: translateX(0); } }
 
+@-webkit-keyframes fadeInWithMovementAtBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-2em); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInWithMovementAtBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-2em); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 @-webkit-keyframes changeColorMainToSecond {
   0% {
     background-color: var(--site-main-color);
@@ -291,6 +307,47 @@ h6 {
   .other-films ul li:nth-child(9) {
     -webkit-animation-delay: 3s;
             animation-delay: 3s; }
+
+@media (max-width: 1023px) {
+  input:checked + nav ul {
+    -webkit-animation: fadeInWithMovementAtBottom 0.2s linear;
+            animation: fadeInWithMovementAtBottom 0.2s linear;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; } }
+
+@media (max-width: 1023px) {
+  input:checked + nav ul li {
+    -webkit-animation: fadeInWithMovementAtBottom 0.2s linear;
+            animation: fadeInWithMovementAtBottom 0.2s linear;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+    input:checked + nav ul li:nth-child(1) {
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s; }
+    input:checked + nav ul li:nth-child(2) {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
+    input:checked + nav ul li:nth-child(3) {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
+    input:checked + nav ul li:nth-child(4) {
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s; }
+    input:checked + nav ul li:nth-child(5) {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
+    input:checked + nav ul li:nth-child(6) {
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s; }
+    input:checked + nav ul li:nth-child(7) {
+      -webkit-animation-delay: 0.7s;
+              animation-delay: 0.7s; }
+    input:checked + nav ul li:nth-child(8) {
+      -webkit-animation-delay: 0.8s;
+              animation-delay: 0.8s; }
+    input:checked + nav ul li:nth-child(9) {
+      -webkit-animation-delay: 0.9s;
+              animation-delay: 0.9s; } }
 
 .cta {
   text-align: center;
