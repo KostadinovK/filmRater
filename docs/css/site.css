@@ -562,6 +562,12 @@ h6 {
   background-size: center;
   position: relative;
   z-index: 1; }
+  @media (max-width: 1023px) {
+    .about-filmRater {
+      width: 90%; } }
+  @media (max-width: 650px) {
+    .about-filmRater {
+      padding: 2rem; } }
   .about-filmRater:after {
     display: block;
     content: '';
@@ -584,10 +590,13 @@ h6 {
 
 .about {
   padding: 4rem 0;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap; }
+  @media (max-width: 1023px) {
+    .about {
+      width: 90%; } }
   .about .about-person {
     flex: 0 0 100%;
     display: flex;
@@ -595,23 +604,32 @@ h6 {
     border-radius: 5px;
     box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75);
     overflow: hidden; }
+    @media (max-width: 1023px) {
+      .about .about-person {
+        flex-wrap: wrap; } }
   .about .about-person:not(:last-child) {
     margin-bottom: 8rem; }
   .about .media {
     overflow: hidden;
     width: 70%;
     max-width: 400px;
-    flex: 0 0 50%; }
+    flex: 0 0 45%; }
+    @media (max-width: 1023px) {
+      .about .media {
+        flex: 1 1 100%; } }
   .about img {
     display: block;
     width: 100%;
     height: auto; }
   .about .content {
     flex: 1 1 50%;
-    padding: 2rem;
     background-color: var(--site-main-color);
     color: var(--site-second-color);
     padding: 10% 2%; }
+    @media (max-width: 1023px) {
+      .about .content {
+        flex: 1 1 100%;
+        padding: 2rem 0; } }
     .about .content h2 {
       font-size: 3rem;
       text-align: center;
@@ -619,12 +637,16 @@ h6 {
     .about .content ul {
       width: 60%;
       margin: 0 auto; }
+      @media (max-width: 1023px) {
+        .about .content ul {
+          width: 90%; } }
     .about .content li {
       list-style: none;
-      font-weight: 400; }
+      font-weight: 400;
+      font-size: 1.5rem; }
       .about .content li span {
         font-weight: bold;
-        font-size: 1.2rem; }
+        font-size: 1.8rem; }
     .about .content li:not(:last-child) {
       margin-bottom: 0.5rem; }
 
@@ -882,7 +904,9 @@ h6 {
     .blog-page {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr); } }
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 4rem;
+      padding: 2rem; } }
   .blog-page .post-title {
     text-decoration: none; }
 
