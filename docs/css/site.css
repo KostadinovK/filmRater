@@ -815,6 +815,9 @@ h6 {
   width: 50%;
   margin: 0 auto;
   padding: 2rem 0; }
+  @media (max-width: 1023px) {
+    .blog {
+      width: 90%; } }
   .blog-title {
     text-align: center;
     font-size: 4rem;
@@ -824,6 +827,9 @@ h6 {
     list-style: none; }
     .blog .posts-headers li:not(:last-child) {
       margin-bottom: 10rem; }
+      @media (max-width: 1023px) {
+        .blog .posts-headers li:not(:last-child) {
+          margin-bottom: 8rem; } }
 
 .post {
   text-decoration: none;
@@ -872,6 +878,11 @@ h6 {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 4rem;
   padding: 2rem 4rem; }
+  @media (max-width: 1023px) {
+    .blog-page {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); } }
   .blog-page .post-title {
     text-decoration: none; }
 
@@ -908,10 +919,18 @@ aside {
   padding: 2rem;
   grid-row: 1 / span 2;
   border-radius: 10px; }
+  @media (max-width: 1023px) {
+    aside {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 1;
+      padding: 0; } }
   aside h2 {
     color: var(--site-main-color);
     text-align: center;
     margin-bottom: 4rem; }
+    @media (max-width: 1023px) {
+      aside h2 {
+        font-size: 3rem; } }
   aside li {
     list-style: none; }
     aside li:not(:last-child) {
