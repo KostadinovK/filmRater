@@ -1,195 +1,191 @@
-.blog{
-    width: 50%;
-    margin: 0 auto;
+.blog {
+	width: 50%;
+	margin: 0 auto;
     padding: 2rem 0;
-
-    @include responsive(mobile){
-        width: 90%;
-    }   
-
-    &-title{
-        text-align: center;
-        font-size: 4rem;
-        color: var(--site-main-color);
-        margin-bottom: 6rem;
+    
+	@include responsive(mobile) {
+		width: 90%;
     }
-
-    .posts-headers li{
+    
+	&-title {
+		text-align: center;
+		font-size: 4rem;
+		color: var(--site-main-color);
+		margin-bottom: 6rem;
+    }
+    
+	.posts-headers li {
         list-style: none;
-
-        &:not(:last-child){
-            margin-bottom: 10rem;
-
-            @include responsive(mobile){
-               margin-bottom: 8rem;
-            } 
-        }
         
-    }
+		&:not(:last-child) {
+			margin-bottom: 10rem;
+			@include responsive(mobile) {
+				margin-bottom: 8rem;
+			}
+		}
+	}
 }
 
-.post{
-    text-decoration: none;
+.post {
+	text-decoration: none;
     color: var(--site-third-color);
     
-
-    &-title{
-        color: var(--site-main-color);
-        margin-bottom: 1rem;
-        text-decoration: none;
-        font-size: 2rem;
+	&-title {
+		color: var(--site-main-color);
+		margin-bottom: 1rem;
+		text-decoration: none;
+		font-size: 2rem;
     }
-
-    &:hover &-title{
-        text-decoration: underline;
+    
+	&:hover &-title {
+		text-decoration: underline;
     }
-
-    &-subtitle{
+    
+	&-subtitle {
+		margin-bottom: 2rem;
+    }
+    
+	&-metadata {
+		text-align: end;
+		padding-right: 3rem;
+		margin-bottom: 2rem;
+    }
+    
+	&-author {
+		color: var(--site-main-color);
+    }
+    
+	&-media {
+		position: relative;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
         margin-bottom: 2rem;
-    }
-
-    &-metadata{
-        text-align: end;
-        padding-right: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    &-author{
-        color: var(--site-main-color);
-    }
-
-    &-media{
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
-        margin-bottom: 2rem;
-
-        &:after{
-            display: block;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.3);
+        
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.3);
         }
-
-        img{
-            max-height: 600px;
-            width: 100%;
-            height: auto;
-            display: block;
+        
+		img {
+			max-height: 600px;
+			width: 100%;
+			height: auto;
+			display: block;
         }
-
-        .post-header:hover &:after{
-            opacity: 0;
-        }
-    }
+        
+		.post-header:hover &:after {
+			opacity: 0;
+		}
+	}
 }
 
 //Blog post details styling
-.blog-page{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 4rem;
+.blog-page {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 4rem;
     padding: 2rem 4rem;
-
-    @include responsive(mobile){
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 4rem;
-        padding: 2rem;
-    } 
-
-    .post-title{
-        text-decoration: none;
+    
+	@include responsive(mobile) {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 4rem;
+		padding: 2rem;
     }
+    
+	.post-title {
+		text-decoration: none;
+	}
 }
 
-.post{
-    grid-row: 1 / span 3;
+.post {
+	grid-row: 1 / span 3;
 }
 
-.share{
-    font-weight: bold;
-    width: 30%;
-    margin: 0 auto;
+.share {
+	font-weight: bold;
+	width: 30%;
+	margin: 0 auto;
     margin-bottom: 4rem;
-
-    ul{
-        display: flex;
-        justify-content: center;
+    
+	ul {
+		display: flex;
+		justify-content: center;
     }
-
-    li{
-        list-style: none;
+    
+	li {
+		list-style: none;
         text-align: center;
-
-        &:not(:last-child){
-            margin-right: 2rem;
+        
+		&:not(:last-child) {
+			margin-right: 2rem;
         }
-
-        i{
-            font-size: 3rem;
-            cursor: pointer;
-        }
+        
+		i {
+			font-size: 3rem;
+			cursor: pointer;
+		}
+	}
+	.facebook i {
+		color: rgb(66, 103, 178);
     }
-
-    .facebook i{
-        color: rgb(66, 103, 178);
-    }
-
-    .twitter i{
-        color: rgb(29, 161, 242);
-    }
+    
+	.twitter i {
+		color: rgb(29, 161, 242);
+	}
 }
 
-.post-content{
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin-top: 4rem;
+.post-content {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-top: 4rem;
 }
 
-aside{
-    padding: 2rem;
-    grid-row: 1 / span 2;
+aside {
+	padding: 2rem;
+	grid-row: 1 / span 2;
     border-radius: 10px;
-
-    @include responsive(mobile){
-        grid-column: 1 / span 1;
-        grid-row: 4 / span 1;
-        padding: 0;
-    } 
-
-    h2{
-        color: var(--site-main-color);
-        text-align: center;
+    
+	@include responsive(mobile) {
+		grid-column: 1 / span 1;
+		grid-row: 4 / span 1;
+		padding: 0;
+    }
+    
+	h2 {
+		color: var(--site-main-color);
+		text-align: center;
         margin-bottom: 4rem;
-
-        @include responsive(mobile){
-            font-size: 3rem;
-        }
+        
+		@include responsive(mobile) {
+			font-size: 3rem;
+		}
     }
-
-    li{
+    
+	li {
         list-style: none;
-
-        &:not(:last-child){
-            margin-bottom: 2rem;
-        }
+        
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
     }
-
-    & a{
-        color: var(--site-third-color);
-        font-size: 1.4rem;
-        text-decoration: none;
-
-        &:hover{
-            text-decoration: underline;
-        }
-    }
+    
+	& a {
+		color: var(--site-third-color);
+		font-size: 1.4rem;
+		text-decoration: none;
+        
+        &:hover {
+			text-decoration: underline;
+		}
+	}
 }

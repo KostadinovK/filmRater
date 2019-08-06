@@ -1,284 +1,282 @@
-.cta{
-    text-align: center;
-    padding: 14rem 3rem;
-    background: url(https://heimkino-partner.de/wp-content/uploads/2016/12/gui-zappiti-movie-wall-en-1920x1080.jpg) center center;
-    background-size: cover;
-    position: relative;
+.cta {
+	text-align: center;
+	padding: 14rem 3rem;
+	background: url(https://heimkino-partner.de/wp-content/uploads/2016/12/gui-zappiti-movie-wall-en-1920x1080.jpg) center center;
+	background-size: cover;
+	position: relative;
     z-index: 1;
-
-    &:after{
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: -1;
+    
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
     }
-
-    p, a{
-        z-index: 2;
+    
+	p,
+	a {
+		z-index: 2;
     }
-
-    p{
-        color: var(--site-second-color);
-        font-size: 2.5rem;
+    
+	p {
+		color: var(--site-second-color);
+		font-size: 2.5rem;
     }
-
-    div{
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 8rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-        @include responsive(mobile){
-            width: 100%;
-        }
+    
+	div {
+		width: 50%;
+		margin: 0 auto;
+		padding-top: 8rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+        
+        @include responsive(mobile) {
+			width: 100%;
+		}
     }
-
-    a{
-        background: var(--site-main-color);
-        border-radius: 10px;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: var(--site-second-color);
-        flex: 0 0 55%;
-        padding: 1rem;
-        border: 2px solid var(--site-main-color);
-
-        @include responsive(mobile){
-            flex: 1 1 100%;
-        }
-
-        &:nth-child(1){
-            margin-bottom: 2rem;
-        }
-
-        &:hover{
-            background-color: var(--site-second-color);
-            color: var(--site-main-color);
-        }
-    }
+    
+	a {
+		background: var(--site-main-color);
+		border-radius: 10px;
+		text-decoration: none;
+		font-size: 1.5rem;
+		color: var(--site-second-color);
+		flex: 0 0 55%;
+		padding: 1rem;
+		border: 2px solid var(--site-main-color);
+        
+        @include responsive(mobile) {
+			flex: 1 1 100%;
+		}
+        
+        &:nth-child(1) {
+			margin-bottom: 2rem;
+		}
+        
+        &:hover {
+			background-color: var(--site-second-color);
+			color: var(--site-main-color);
+		}
+	}
 }
 
-.our-team{
-    width: 80%;
-    margin: 6rem auto;
-    padding: 0 2rem;
-
-    ul{
-        @include responsive(mobile){
-            flex-wrap: wrap;
+.our-team {
+	width: 80%;
+	margin: 6rem auto;
+	padding: 0 2rem;
+    
+    ul {
+		@include responsive(mobile) {
+			flex-wrap: wrap;
+		}
+	}
+    
+    li {
+		flex: 0 0 22%;
+		list-style: none;
+        
+        @include responsive(mobile) {
+			flex: 1 1 100%;
+		}
+        
+        &:not(:last-child) {
+			@include responsive(mobile) {
+				margin-bottom: 3rem;
+			}
         }
-    }
 
-    li{
-        flex: 0 0 22%;
-        list-style: none;
-
-        @include responsive(mobile){
-            flex: 1 1 100%;
-        }
-
-        &:not(:last-child){
-            @include responsive(mobile){
-                margin-bottom: 3rem;
-            }
-        }
-
-        .member{
-            text-align: center;
-
+		.member {
+			text-align: center;
             
-
-            .media{
-                max-width: 300px;
-                max-height: 400px;
-                overflow: hidden;
-                position: relative;
-                z-index: 1;
-                border-radius: 5px;
-                box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
-
-                @include responsive(mobile){
-                    width: 80%;
-                    margin: 0 auto;
+            .media {
+				max-width: 300px;
+				max-height: 400px;
+				overflow: hidden;
+				position: relative;
+				z-index: 1;
+				border-radius: 5px;
+				box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75);
+                
+                @include responsive(mobile) {
+					width: 80%;
+					margin: 0 auto;
                 }
-
-                &:hover{
-                    cursor: pointer;
+                
+				&:hover {
+					cursor: pointer;
                 }
-
-                &:after{
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background: rgba(0, 0, 0, 0.5);
-                    pointer-events: none;
+                
+				&:after {
+					display: block;
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background: rgba(0, 0, 0, 0.5);
+					pointer-events: none;
                 }
-
-                .info{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    z-index: 2;
-                    color: var(--site-second-color);
-                    text-align: center;
-                    width: 100%;
-                    padding: 0 0.5rem;
+                
+				.info {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					z-index: 2;
+					color: var(--site-second-color);
+					text-align: center;
+					width: 100%;
+					padding: 0 0.5rem;
                 }
-
-                h2{
-                    margin-bottom: 2rem;
+                
+				h2 {
+					margin-bottom: 2rem;
                 }
-
-                a img{
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
-    }
+                
+				a img {
+					display: block;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
 }
 
 .our-team h2,
-.reviews-about-us h2{
-    text-align: center;
-    font-size: 4rem;
-    color: var(--site-main-color);
-    margin-bottom: 0.5rem;
+.reviews-about-us h2 {
+	text-align: center;
+	font-size: 4rem;
+	color: var(--site-main-color);
+	margin-bottom: 0.5rem;
 }
 
 .our-team h3,
-.reviews-about-us h3{
-    text-align: center;
-    margin-bottom: 3rem;
+.reviews-about-us h3 {
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .our-team ul,
-.reviews-about-us ul{
-    display: flex;
-    justify-content: space-evenly;
+.reviews-about-us ul {
+	display: flex;
+	justify-content: space-evenly;
 }
 
-.newsletter{
-    padding: 2rem 1rem;
-    background-color: var(--site-main-color);
-    text-align: center;
-    margin: 2rem 0;
-
-    h2{
-        color: var(--site-second-color);
-        margin-bottom: 2rem;
+.newsletter {
+	padding: 2rem 1rem;
+	background-color: var(--site-main-color);
+	text-align: center;
+	margin: 2rem 0;
+    
+    h2 {
+		color: var(--site-second-color);
+		margin-bottom: 2rem;
     }
-
-    form p{
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-        @include responsive(mobile){
-           
-           width: 70%;
+    
+	form p {
+		width: 50%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+        
+        @include responsive(mobile) {
+			width: 70%;
         }
-
-        input{
-            border-radius: 5px;
-
-            @include responsive(tablet){
-                flex: 1 1 100%;
+        
+		input {
+			border-radius: 5px;
+            
+            @include responsive(tablet) {
+				flex: 1 1 100%;
             }
-
-            &[type='email']{
-                padding: 0.4rem;
-                flex: 0 0 80%;
-                margin-bottom: 1rem;
+            
+			&[type='email'] {
+				padding: 0.4rem;
+				flex: 0 0 80%;
+				margin-bottom: 1rem;
             }
-
-            &[type='submit']{
-                flex: 0 0 25%;
-                background: var(--site-second-color);
-                outline: none;
-                border: none;
-                color: var(--site-main-color);
-                font-weight: bold;
-                cursor: pointer;
-                padding: 0.5rem 0;
-
-                @include responsive(mobile){
-                    flex: 0 0 40%;
-                }
-            }
-        }
-    }
+            
+			&[type='submit'] {
+				flex: 0 0 25%;
+				background: var(--site-second-color);
+				outline: none;
+				border: none;
+				color: var(--site-main-color);
+				font-weight: bold;
+				cursor: pointer;
+				padding: 0.5rem 0;
+                
+                @include responsive(mobile) {
+					flex: 0 0 40%;
+				}
+			}
+		}
+	}
 }
 
-.reviews-about-us{
-    width: 80%;
-    margin: 6rem auto;
-
-    ul{
-        @include responsive(mobile){
-            flex-wrap: wrap;
-        }
+.reviews-about-us {
+	width: 80%;
+	margin: 6rem auto;
+    
+    ul {
+		@include responsive(mobile) {
+			flex-wrap: wrap;
+		}
     }
-
-    ul li{
-        text-align: center;
-        flex: 0 0 30%;
-        list-style: none;
-
-        @include responsive(mobile){
-            flex: 1 1 100%;
-        }
+    
+	ul li {
+		text-align: center;
+		flex: 0 0 30%;
+		list-style: none;
+        
+        @include responsive(mobile) {
+			flex: 1 1 100%;
+		}
     }
-
-    .testimonial{
-        img{
-            display: block;
-            width: 100%;
-            height: auto;
+    
+	.testimonial {
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
         }
-
-        .media{
-            overflow: hidden;
-            max-width: 200px;
-            max-height: 200px;
-            border-radius: 100%;
-            margin: 2rem auto;
-            box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
-            position: relative;
-
-            &:after{
-                display: block;
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: rgba(0,0,0,0.2);
-            }
+        
+		.media {
+			overflow: hidden;
+			max-width: 200px;
+			max-height: 200px;
+			border-radius: 100%;
+			margin: 2rem auto;
+			box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75);
+			position: relative;
+            
+            &:after {
+				display: block;
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, 0.2);
+			}
         }
-
-        h4{
-            margin-bottom: 1rem;
+        
+		h4 {
+			margin-bottom: 1rem;
         }
-
-         p{
-            font-style: italic;
-            font-size: 1.2rem;
-        }
-    }
-} 
+        
+		p {
+			font-style: italic;
+			font-size: 1.2rem;
+		}
+	}
+}

@@ -1,126 +1,125 @@
-.about-filmRater{
-    padding: 6rem 4rem;
-    width: 100%;
-    text-align: center;
-    background: url(http://getwallpapers.com/wallpaper/full/f/1/b/375459.jpg) center center;
-    background-size: center;
-    position: relative;
+.about-filmRater {
+	padding: 6rem 4rem;
+	width: 100%;
+	text-align: center;
+	background: url(http://getwallpapers.com/wallpaper/full/f/1/b/375459.jpg) center center;
+	background-size: center;
+	position: relative;
     z-index: 1;
-
-    @include responsive(phone){
-        padding: 2rem;
+    
+	@include responsive(phone) {
+		padding: 2rem;
     }
-
-    &:after{
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.5);
-        z-index: -1;
+    
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
     }
-
-    h2{
-        margin-bottom: 2rem;
-        font-size: 4rem;
-        color: var(--site-main-color);
-        z-index: 2;
+    
+	h2 {
+		margin-bottom: 2rem;
+		font-size: 4rem;
+		color: var(--site-main-color);
+		z-index: 2;
     }
-
-    h3{
-        color: var(--site-second-color);
-        line-height: 1.5;
-        z-index: 2;
-    }
+    
+	h3 {
+		color: var(--site-second-color);
+		line-height: 1.5;
+		z-index: 2;
+	}
 }
 
-.about{
-    padding: 4rem 0;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-
-    @include responsive(mobile){
-        width: 90%;
+.about {
+	padding: 4rem 0;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+    
+    @include responsive(mobile) {
+		width: 90%;
     }
-
-    .about-person {
-        flex: 0 0 100%;
-        display: flex;
-        justify-content: space-evenly;
-        border-radius: 5px;
-        box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.75);
+    
+	.about-person {
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: space-evenly;
+		border-radius: 5px;
+		box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.75);
         overflow: hidden;
-
-        @include responsive(mobile){
-            flex-wrap: wrap;
+        
+		@include responsive(mobile) {
+			flex-wrap: wrap;
+		}
+    }
+    
+	.about-person:not(:last-child) {
+		margin-bottom: 8rem;
+    }
+    
+	.media {
+		overflow: hidden;
+		width: 70%;
+		max-width: 400px;
+		flex: 0 0 45%;
+        
+        @include responsive(mobile) {
+			flex: 1 1 100%;
         }
+        
     }
-
-    .about-person:not(:last-child){
-        margin-bottom: 8rem;
+    
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
     }
-
-    .media{
-        overflow: hidden;
-        width: 70%;
-        max-width: 400px;
-        flex: 0 0 45%;
-
-        @include responsive(mobile){
-            flex: 1 1 100%;
-        }
-    }
-
-    img{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .content{
-        flex: 1 1 50%;
-        background-color: var(--site-main-color);
-        color: var(--site-second-color);
+    
+	.content {
+		flex: 1 1 50%;
+		background-color: var(--site-main-color);
+		color: var(--site-second-color);
         padding: 10% 2%;
-
-        @include responsive(mobile){
-            flex: 1 1 100%;
-            padding: 2rem 0;
+        
+		@include responsive(mobile) {
+			flex: 1 1 100%;
+			padding: 2rem 0;
         }
-
-        h2{
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 2rem;
+        
+		h2 {
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 2rem;
         }
-
-        ul{
-            width: 60%;
-            margin: 0 auto;
-
-            @include responsive(mobile){
-                width: 90%;
-            }
+        
+		ul {
+			width: 60%;
+			margin: 0 auto;
+			@include responsive(mobile) {
+				width: 90%;
+			}
         }
-
-        li{
-            list-style: none;
-            font-weight: 400;
-            font-size: 1.5rem;
-
-            span{
-                font-weight: bold;
-                font-size: 1.8rem;
-            }
+        
+		li {
+			list-style: none;
+			font-weight: 400;
+			font-size: 1.5rem;
+			span {
+				font-weight: bold;
+				font-size: 1.8rem;
+			}
         }
-
-        li:not(:last-child){
-            margin-bottom: 0.5rem;
-        }
-    }
+        
+		li:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
