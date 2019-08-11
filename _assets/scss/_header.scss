@@ -130,7 +130,6 @@
         ul {
 			display: flex;
 			flex: 1 1 100%;
-			justify-content: space-evenly;
         }
         
 		li {
@@ -144,9 +143,17 @@
 		        cursor: pointer;
             }
             
-            :first-child {
+            &:first-child {
                 @include responsive(tablet) {
                     margin-top: 0.5rem;
+                }
+            }
+
+            &:not(:last-child){
+                margin-right: 5%;
+                
+                @include responsive(tablet) {
+                    margin-right: 0;
                 }
             }
         }

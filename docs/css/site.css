@@ -1093,8 +1093,7 @@ aside {
         margin-bottom: 1rem; } }
     .site-header nav ul {
       display: flex;
-      flex: 1 1 100%;
-      justify-content: space-evenly; }
+      flex: 1 1 100%; }
     .site-header nav li {
       list-style: none;
       display: block;
@@ -1105,8 +1104,13 @@ aside {
           margin-bottom: 0.5rem;
           cursor: pointer; } }
       @media (max-width: 1159px) {
-        .site-header nav li :first-child {
+        .site-header nav li:first-child {
           margin-top: 0.5rem; } }
+      .site-header nav li:not(:last-child) {
+        margin-right: 5%; }
+        @media (max-width: 1159px) {
+          .site-header nav li:not(:last-child) {
+            margin-right: 0; } }
     .site-header nav a {
       text-decoration: none;
       display: block;
