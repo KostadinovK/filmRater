@@ -50,7 +50,8 @@
 		flex: 0 0 55%;
 		padding: 1rem;
 		border: 2px solid var(--site-main-color);
-        
+		margin: 0 auto;
+		
         @include responsive(mobile) {
 			flex: 1 1 100%;
 		}
@@ -80,6 +81,7 @@
     li {
 		flex: 0 0 22%;
 		list-style: none;
+		margin: 0 auto;
         
         @include responsive(mobile) {
 			flex: 1 1 100%;
@@ -193,7 +195,8 @@
         
 		input {
 			border-radius: 5px;
-            
+			margin: 0 auto;
+			
             @include responsive(tablet) {
 				flex: 1 1 100%;
             }
